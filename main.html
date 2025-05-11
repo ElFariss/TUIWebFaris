@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Stride</title>
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <!-- jQuery -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+   <!-- jQuery Terminal -->
+   <link href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css" rel="stylesheet" />
+   <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+   <div class="status-bar" id="clock" aria-live="polite">
+      user@guest:~$ 00:00:00 | Privacy: GONE
+   </div>
+</head>
+
+<body>
+   <script src="script.js"></script>
+   <div class="wrapper">
+      <h1>Stride</h1>
+      <p><em>DON'T TRUST ANY GOVERNMENT ENTITY</em></p>
+      <main class="content-flex">
+         <section class="left-side">
+            <section class="introduction" aria-label="Site Introduction">
+               <p>
+                  I'm a computer science enthusiast with a focus on cybersecurity, Linux systems, and open-source
+                  technologies. I enjoy solving complex problems, building "efficient" code, and exploring the
+                  intersection of tech and ethics. When I'm not diving into terminal windows or debugging, I’m probably
+                  learning something new or "helping" others do the same.
+               </p>
+            </section>
+            <section class="movies" aria-label="Project Log">
+               <div class="label">Movies and Shows ranks:</div>
+               <ul id="log-list">
+                  <ul>
+                     <li>Evangelion</li>
+                     <li>Reservoir Dog</li>
+                     <li>Blade Runner 2049</li>
+                     <li>La La Land</li>
+                  </ul>
+               </ul>
+            </section>
+         </section>
+         <aside class="right-side" aria-label="Sidebar">
+            <section class="about">
+               <div class="label">about:</div>
+               <ul>
+                  <li>&gt; name: Faris</li>
+                  <li>&gt; pronouns: he/him</li>
+                  <li>&gt; occupation: online</li>
+                  <li>&gt; os: Arch</li>
+               </ul>
+            </section>
+            <section class="link">
+               <div class="label">links:</div>
+               <nav aria-label="Personal Links">
+                  <ul>
+                     <li>&gt; <a href="https://github.com/ElFariss" rel="noopener noreferrer" target="_blank"
+                           title="Opens in new tab">Github</a>
+                     </li>
+                     <li>&gt; <a href="https://www.instagram.com/faris.elll/" rel="noopener noreferrer" target="_blank"
+                           title="Opens in new tab">Instagram</a>
+                     </li>
+                     <li>&gt; <a href="https://www.linkedin.com/in/muhammad-faris-el-hakim-210a12321/"
+                           rel="noopener noreferrer" target="_blank" title="Opens in new tab">LinkedIn</a>
+                     </li>
+                  </ul>
+               </nav>
+            </section>
+         </aside>
+      </main>
+      <section class="tips" aria-label="word">
+         <span class="label">word to live by:</span>
+         if you are using an inferior operating system (windows), disgusting. god bless linus torvalds!
+      </section>
+   </div>
+   <div id="interactive-terminal"></div>
+</body>
+
+</html>
