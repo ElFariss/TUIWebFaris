@@ -12,13 +12,16 @@
    <!-- jQuery Terminal -->
    <link href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css" rel="stylesheet" />
    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
-   <div class="status-bar" id="clock" aria-live="polite">
-      user@guest:~$ 00:00:00 | Privacy: GONE
-   </div>
 </head>
 
 <body>
+   <div class="status-bar" id="clock" aria-live="polite">
+      user@guest:~$ 00:00:00 | Privacy: GONE
+   </div>
    <script src="script.js"></script>
+   <div id="loader" class="loader">
+      <span id="loader-text">Loading Terminal</span><span id="loading-dots"></span>
+   </div>
    <div class="wrapper">
       <h1>Stride</h1>
       <p><em>DON'T TRUST ANY GOVERNMENT ENTITY</em></p>
