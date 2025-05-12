@@ -41,16 +41,6 @@
    color: var(--main-color)
 }
 
-@keyframe hold {
-   0% {
-      opacity: 1;
-   }
-
-   100% {
-      opacity: 1;
-   }
-}
-
 .loader.fade-out {
    opacity: 0;
    visibility: hidden;
@@ -90,10 +80,11 @@ body {
 
 
 .wrapper {
+   justify-content: center;
    max-width: 1000px;
    margin-top: 15px;
-   margin-right: auto;
    margin-left: auto;
+   margin-right: auto;
    margin-bottom: auto;
    padding-top: 0px;
    padding-left: 20px;
@@ -101,6 +92,37 @@ body {
    padding-bottom: 20px;
    border: 1px dashed var(--border);
    box-shadow: 0 0 1px var(--border), inset 0 0 1px var(--border);
+}
+
+#interactive-terminal {
+   height: 380px;
+   width: 1000px;
+   background-color: var(--main-bg);
+   border: 1px dashed var(--border);
+   box-shadow: 0 0 1px var(--border), inset 0 0 1px var(--border);
+   padding: 1px;
+   margin-top: 20px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: auto;
+}
+
+#greetings-terminal {
+   font-size: 1em;
+   color: var(--accent);
+   padding-top: 10px;
+   padding-left: 10px;
+}
+
+#interactive-terminal .terminal,
+#interactive-terminal .terminal-output,
+#interactive-terminal .cmd,
+#interactive-terminal .cmd span,
+#interactive-terminal .cursor,
+#interactive-terminal .greetings {
+   font-family: 'Fira Code', monospace !important;
+   font-size: 1em !important;
+   line-height: 1.4 !important;
 }
 
 h1 {
@@ -186,8 +208,8 @@ nav {
    border: 1px dashed var(--border);
    box-shadow: 0 0 1px var(--border), inset 0 0 1px var(--border);
    padding: 16px;
-   padding-bottom: 30px;
-   margin-bottom: 13px;
+   padding-bottom: 20px;
+   margin-bottom: 10px;
    background: var(--section-bg);
 }
 
@@ -196,7 +218,6 @@ nav {
    box-shadow: 0 0 1px var(--border), inset 0 0 1px var(--border);
    padding: 16px;
    padding-bottom: 18px;
-   margin-bottom: 0px;
    background: var(--section-bg);
 }
 
@@ -234,7 +255,7 @@ a:focus {
    box-shadow: 0 0 1px var(--border), inset 0 0 1px var(--border);
    margin: 10px 0;
    padding: 10px;
-   padding-bottom: 3px;
+   padding-bottom: 15px;
    background: rgba(0, 0, 0, 0.667);
    min-height: 2em;
 }
@@ -251,23 +272,8 @@ a:focus {
    box-shadow: 0 0 1px var(--tips-border), inset 0 0 1px var(--tips-border);
    background: var(--tips-bg);
    padding: 12px;
-   font-size: 0.97em;
    margin: 12px 0;
    position: relative;
-}
-
-
-#interactive-terminal {
-   height: 380px;
-   width: 1000px;
-   background-color: var(--main-bg);
-   border: 1px dashed var(--border);
-   box-shadow: 0 0 1px var(--border), inset 0 0 1px var(--border);
-   padding: 5px;
-   margin-top: 20px;
-   margin-left: auto;
-   margin-right: auto;
-   margin-bottom: auto;
 }
 
 @media (max-width: 800px) {
@@ -290,4 +296,60 @@ a:focus {
 .reveal-section.visible {
    opacity: 1;
    transform: translateY(0);
+}
+
+@media only screen and (max-width: 1000px) {
+   .loader {
+      width: auto;
+      height: auto;
+   }
+
+   body {
+      font-size: 0.7em;
+   }
+
+   .wrapper {
+      max-width: auto;
+      margin-left: 5%;
+      margin-right: 5%;
+   }
+
+   .movies {
+      padding: auto;
+   }
+
+   #interactive-terminal {
+      width: auto;
+      margin-left: 5%;
+      margin-right: 5%;
+      font-size: 0.6em;
+   }
+
+   #greetings-terminal {
+      font-size: 2.6em;
+      color: var(--accent);
+   }
+
+   .about {
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-left: 10px;
+      padding-bottom: 20px;
+   }
+
+   #greetings-terminal {
+      font-size: 2em;
+   }
+
+   #interactive-terminal .terminal,
+   #interactive-terminal .terminal-output,
+   #interactive-terminal .cmd,
+   #interactive-terminal .cmd span,
+   #interactive-terminal .cursor,
+   #interactive-terminal .greetings {
+      font-family: 'Fira Code', monospace !important;
+      font-size: 0.98em !important;
+      line-height: 1.4 !important;
+   }
+
 }

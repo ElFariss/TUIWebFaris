@@ -60,7 +60,7 @@ $(function() {
             );
       }
    }, {
-     greetings: '[[b;#00FA9A;]Interactive Terminal | Type "help" to begin.]',
+     greetings: '',
      name: 'web_terminal',
      prompt: '[[;#7CFC00;]user@guest:~$ ]'
    });
